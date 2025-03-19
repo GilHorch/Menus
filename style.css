@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+section {
+    margin: 50px;
+}
+h2 {
+    text-align: center;
+}
+
+/* Estilos do Menu Horizontal */
+.menu-horizontal nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+.menu-horizontal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu-horizontal li {
+    display: inline;
+    margin: 0 15px;
+}
+.menu-horizontal a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+.menu-horizontal a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Estilos do Menu Vertical */
+.menu-vertical {
+    width: 200px;
+    background-color: #333;
+    padding: 0;
+    position: relative;
+    height: auto;
+}
+.menu-vertical ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu-vertical li {
+    padding: 15px;
+    border-bottom: 1px solid #444;
+}
+.menu-vertical a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+.menu-vertical a:hover {
+    background-color: #555;
+}
+
+/* Estilos do Menu Responsivo */
+.menu-responsivo nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+.menu-responsivo .menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.menu-responsivo .menu li {
+    padding: 10px;
+}
+.menu-responsivo .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+}
+.menu-responsivo .menu a:hover {
+    background-color: #555;
+}
+.menu-responsivo .menu-toggle {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+}
+@media (min-width: 600px) {
+    .menu-responsivo .menu-toggle {
+        display: none;
+    }
+    .menu-responsivo .menu {
+        display: flex;
+        justify-content: center;
+    }
+    .menu-responsivo .menu li {
+        margin: 0 15px;
+    }
+}
